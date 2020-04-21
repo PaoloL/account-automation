@@ -18,27 +18,27 @@ Rename `config-example.yml` in `config.yml` and insert information about Organiz
 
 ```
 General:
-  EmailValidation: '^aws-[a-z][a-z,-]{3,20}@xpeppers.com$'
-  MemberAccountNameValiation: '^aws-[a-z][a-z,-]{3,20}@xpeppers.com$'
+  EmailValidation: '^aws-[a-z][a-z,-]{3,20}@mail.com$'
+  MemberAccountNameValiation: '^aws-[a-z][a-z,-]{3,20}MyCompany$'
 
 Organizations:
 
   - Name: Payer
-    AccountId: 7527225182XY
+    AccountId: 1234567891011
     AccessKeyId: AKIXXXXXXXXXXXXXXXX
     SecretAccessKey: exxxxxxxxxxxxxxxxxxxxxxx
     AdministrationRoleName: PayerOrganizationAccountAccessRole
 
   - Name: Reseller
-    AccountId: 9063453403XY
+    AccountId: 1234567891011
     AccessKeyId: AKIXXXXXXXXXXXXXXXX
     SecretAccessKey: exxxxxxxxxxxxxxxxxxxxxxx
     AdministrationRoleName: ResellerOrganizationAccountAccessRole
 
 Hubs:
 
-  - Name: XPeppersCentral
-    AccountId: 5402184232XY
+  - Name: CompanyCentralLogin
+    AccountId: 1234567891011
     AccessKeyId: AKIXXXXXXXXXXXXXXXX
     SecretAccessKey: exxxxxxxxxxxxxxxxxxxxxxx+
     FederationRoleName: AdministrationFromXPeppersCentral
