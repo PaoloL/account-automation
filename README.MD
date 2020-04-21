@@ -41,7 +41,7 @@ Hubs:
     AccountId: 1234567891011
     AccessKeyId: AKIXXXXXXXXXXXXXXXX
     SecretAccessKey: exxxxxxxxxxxxxxxxxxxxxxx+
-    FederationRoleName: AdministrationFromXPeppersCentral
+    FederationRoleName: AdministrationFromAccountCentral
     AdminFederationPolicyArn: arn:aws:iam::aws:policy/AdministratorAccess
     PowerUsersFederationPolicyArn: arn:aws:iam::aws:policy/PowerUserAccess
     ReadOnlyFederationPolicyArn: arn:aws:iam::aws:policy/ReadOnlyAccess
