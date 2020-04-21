@@ -1,0 +1,34 @@
+General:
+  EmailValidation: '^aws-[a-z][a-z,-]{3,20}@xpeppers.com$'
+  MemberAccountNameValiation: '^aws-[a-z][a-z,-]{3,20}@xpeppers.com$'
+
+Organizations:
+
+# IF you have more than one organization you can specify the organization to use for account creation
+# In the create script you ca select the organization by name
+
+  - Name: #Organization Name 1
+    AccountId: #Organization account id
+    AccessKeyId: #Organization AccessKeyId
+    SecretAccessKey: #Organization SecretAccessKey
+    AdministrationRoleName: #RoleName used during memeber account creation
+
+  - Name: #Organization Name 2
+    AccountId: #Organization account id
+    AccessKeyId: #Organization AccessKeyId
+    SecretAccessKey: #Organization SecretAccessKey
+    AdministrationRoleName: #RoleName used during memeber account creation
+
+# If you would to federate a new account or existig account (spoke acccount) with another account (hub account)
+# In the federate script you ca select the hub by name
+
+Hubs:
+
+  - Name: #Hub account name
+    AccountId: # Hub account id
+    AccessKeyId: #Hub AccessKeyId
+    SecretAccessKey: #Hub SecretAccessKey
+    FederationRoleName: #RoleName created on spoke account for administration
+    AdminFederationPolicyArn: #PolicyArn for Admins privileges on spoke acccount
+    PowerUsersFederationPolicyArn: #PolicyArn for PowerUsers privileges on spoke acccount
+    ReadOnlyFederationPolicyArn: #PolicyArn for ReadOnly privileges on spoke acccount
