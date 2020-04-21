@@ -76,7 +76,7 @@ Create a new account
 This script return informations as these:
 ```
 Account 420736453999 created!
-Service-linked role GrampusOrganizationAccountAccessRole created
+Service-linked role CentralOrganizationAccountAccessRole created
 ```
 
 # Federate a new or existing account
@@ -87,5 +87,5 @@ This script return informations as these:
 ```
 Federation completed, please add users on AdminsToTestAccount in your Hub account, use switch Role with the following:
 AccountId: 4207364539999
-RoleName: AWSServiceRoleFromXPeppersCentral
+RoleName: AWSServiceRoleFromAccountCentralLogin
 ```
